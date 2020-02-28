@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  mongo-tc:
+    build: .
+    image: mongo-tc:latest
+    ports:
+      - "27016:27016"
+    volumes:
+      - /Desktop/node-eval/src/data/:/home/app/data/
